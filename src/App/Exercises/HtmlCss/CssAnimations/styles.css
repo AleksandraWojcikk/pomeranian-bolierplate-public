@@ -1,0 +1,13 @@
+.redtitle {
+color: red;
+font-weight: bold;
+animation-name: bounce;
+animation-duration: 5s;
+animation-direction: normal;
+
+}
+@keyframes bounce {
+    
+    
+}
+
