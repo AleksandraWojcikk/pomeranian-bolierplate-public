@@ -1,0 +1,42 @@
+.title {
+    font-size: xx-large;
+    margin-top: 10px;
+    line-height:20px;
+    margin-bottom: 20px;
+}
+.date {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.h {
+    font-weight:bolder;
+    
+}
+
+.dolny {
+    vertical-align: sub;
+}
+
+.bold {
+    font-weight: bold;
+}
+.gorny {
+    vertical-align: super;
+}
+
+.quote {
+    text-decoration: 
+}
+
+.tekst {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.happy {
+    font-style:italic
+}
+
+.nothing {
+    text-decoration: line-through;
+}
