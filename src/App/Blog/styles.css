@@ -1,3 +1,23 @@
+.blog {
+    color: var(--secondary-secondary, #23213D);
+    font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 188.889% */
+margin-right: 1094px;
+}
+
+.date {
+font-size: 10.5px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 228.571% */
+letter-spacing: 1.68px;
+text-transform: uppercase;
+margin-bottom: 0;
+}
 
 .wrapper {
     width: 1440px;
@@ -5,36 +25,48 @@
     border-radius: 10px;
     background: #FFF;
     color: var(--text-text-primary, #222);
+    font-family: 'Bricolage Grotesque';
+   padding: 45 61 45 61;
 
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-family: 'Tomorrow', sans-serif;
+   margin-left: 61px;
+    margin-top: 45px;
+    margin-right: 61px;
+    margin-bottom: 45px;
     
-
-     
 }
-.title {
 
+h1 {
 font-size: 42px;
 font-style: normal;
 font-weight: 800;
 line-height: 56px; /* 133.333% */
-padding: 10px, 10px, 10px, 0
-
-
+padding: 10px, 10px, 10px, 0;
+margin-top: 10px;
 }
 
 .tekst {
-
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 27px;
+padding: 10 10 10;
+width: 912px;
 }
 
 .name {
-    font-size: 18px;
+font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 32px;
-width: 377px
+width: 377px;
+margin-bottom: 0;
+}
+
+.specialist {
+    width: 796px;
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-top: 0;
 }
