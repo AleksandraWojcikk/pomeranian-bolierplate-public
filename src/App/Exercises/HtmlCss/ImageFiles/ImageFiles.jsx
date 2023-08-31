@@ -1,14 +1,15 @@
 import './styles.css';
-import jpg from './jakosc.jpg';
-import png from './ball.png';
-import svg from './kiwi.svg';
+import logoit from './logoit.png';
+import widok from './widok.png';
+import { RoundImage } from '../../../Components/RoundImage/RoundImage';
 
-export const ImageFiles = () => {
+export function ImageFiles() {
   return (
-    <div className="images">
-      <img src={jpg} alt="Quality" />
-      <img src={png} alt="Ball" />
-      <img src={svg} alt="Ptak Kiwi" />
+    <div>
+      <img src={logoit} alt="Pomeranian logo" />
+      <img src={widok} alt="Zdjęcie" />
+      <RoundImage src={widok} />
+      <RoundImage src={logoit} size={`300px`} />
     </div>
   );
-};
+}
