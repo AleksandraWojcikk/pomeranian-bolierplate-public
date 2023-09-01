@@ -1,0 +1,21 @@
+table {
+table-layout: fixed;
+width: 100%;
+text-align: left;
+border: 1px solid #ccc;
+border-collapse: collapse;
+
+
+}
+td, th {
+padding: 5px;
+border: 1px solid #ccc;
+}
+
+tr:nth-child(2n) {
+background-color: #e1e1e1;
+
+}
+.literki {
+    list-style-type: lower-alpha;
+}
