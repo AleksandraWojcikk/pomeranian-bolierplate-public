@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    padding: 18px 24px;
+flex-direction: column;
+align-items: flex-start;
+
+align-self: stretch;
+border-radius: 8px;
+border-left: 5px solid var(--gray-300, #C8CBD1);
+background: var(--background-bg-primary, #FFF);
+}
+
+h1 {
+    font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 188.889% */
+}
+
+hr {
+    background: #EBEBEB;
+    border: 1;
+}
+
+p {
+    color: var(--text-text-primary, #222);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 177.778% */
+align-self: stretch;
+
+}
