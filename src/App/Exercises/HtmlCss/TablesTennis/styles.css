@@ -1,0 +1,8 @@
+tr:nth-child(2n) {
+    background-color: #f98d9e;
+
+}
+
+td, th {
+    border: 0;
+}
