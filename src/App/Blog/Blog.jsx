@@ -4,6 +4,7 @@ export const Blog = () => {
   return (
     <>
       <div className="blog">BLOG</div>
+      {/* Pierwszy post */}
       <div className="wrapper">
         <div className="date">30-11-2022</div>
         <h1>
@@ -24,6 +25,80 @@ export const Blog = () => {
             Salt-N-Pepa to Rick Astley.
           </p>
         </div>
+        <p className="name">
+          <strong>Radosława Majdan</strong>
+        </p>
+
+        <p className="specialist">Senior Marketing Specialist</p>
+      </div>
+
+      {/* Drugi post */}
+      <div className="wrapper">
+        <div className="date">30-11-2022</div>
+        <h1>
+          <strong>I make mistakes!</strong>
+        </h1>
+        <div className="tekst2">
+          <p>
+            {' '}
+            <i>
+              “I’m selfish, impatient and a little insecure. I make mistakes, I
+              am out of control and at times hard to handle. But if you can’t
+              handle me at my worst, then you sure as hell don’t deserve me at
+              my best.”
+            </i>
+          </p>
+          <p className="marylin">Marilyn Monroe</p>
+        </div>
+
+        <p className="name">
+          <strong>Radosława Majdan</strong>
+        </p>
+
+        <p className="specialist">Senior Marketing Specialist</p>
+      </div>
+
+      {/* Trzeci post */}
+      <div className="wrapper">
+        <div className="date">30-11-2022</div>
+        <h1>
+          <strong>18 Record-Breaking, Controversial, and Weird Facts</strong>
+        </h1>
+        <div className="tekst">
+          <p>
+            The death of Queen Elizabeth II on September 8 at the age of 96
+            represents a monumental shift for the British monarchy and the
+            people of England. Royals have died before, of course, but the Queen
+            ruled for more than 70 years, and represented a certain stability
+            and decorum that held the institution of the Royal Family together
+            as it slowly grew more visibly anachronistic and battered by endless
+            scandals.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a"
+                target="blank"
+              >
+                <strong>WP.PL</strong>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.wp.pl/" target="blank">
+                <strong>WP.PL 2</strong>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa"
+                target="blank"
+              >
+                ONET.PL
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <p className="name">
           <strong>Radosława Majdan</strong>
         </p>

@@ -20,18 +20,21 @@ margin-bottom: 0;
 }
 
 .wrapper {
-    width: 1440px;
-    height: 1976px;
-    border-radius: 10px;
-    background: #FFF;
+    display: inline-flex;
+    flex-direction: column;
+    border: 8px;
+    border-radius: 8px;
+    background: #F4F5F7;
     color: var(--text-text-primary, #222);
-    font-family: 'Bricolage Grotesque';
    padding: 45 61 45 61;
-
+   align-items: flex-start;
+   gap: 10px;
    margin-left: 61px;
-    margin-top: 45px;
-    margin-right: 61px;
-    margin-bottom: 45px;
+   margin-top: 45px;
+   margin-right: 61px;
+   margin-bottom: 45px;
+
+
     
 }
 
@@ -42,6 +45,8 @@ font-weight: 800;
 line-height: 56px; /* 133.333% */
 padding: 10px, 10px, 10px, 0;
 margin-top: 10px;
+width: 912px;
+font-family: 'Bricolage Grotesque';
 }
 
 .tekst {
@@ -51,6 +56,7 @@ font-weight: 400;
 line-height: 27px;
 padding: 10 10 10;
 width: 912px;
+font-family: 'Bricolage Grotesque';
 }
 
 .name {
@@ -60,6 +66,7 @@ font-weight: 700;
 line-height: 32px;
 width: 377px;
 margin-bottom: 0;
+font-family: 'Bricolage Grotesque';
 }
 
 .specialist {
@@ -69,4 +76,38 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px;
 margin-top: 0;
+font-family: 'Bricolage Grotesque';
+}
+
+
+.tekst2 {
+    
+    line-height: 27px;
+    padding: 10 10 10;
+    width: 912px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400px;
+    font-family: 'Bricolage Grotesque';
+   
+}
+
+
+.marylin {
+    text-align: right;
+    align-self: stretch;
+    font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 157.143% */
+font-family: 'Bricolage Grotesque';
+}
+
+ul {
+    padding: 0 10;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: 29px;
+    text-decoration-line: underline;
 }
