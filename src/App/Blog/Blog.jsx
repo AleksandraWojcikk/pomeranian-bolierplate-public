@@ -1,4 +1,6 @@
 import './styles.css';
+import notification from './notification.svg';
+import hand from './Vector.svg';
 
 export const Blog = () => {
   return (
@@ -7,7 +9,9 @@ export const Blog = () => {
       {/* Pierwszy post */}
       <div className="wrapper1">
         <div className="date">30-11-2022</div>
-
+        <div className="notification">
+          <img src={notification} alt="notification"></img>
+        </div>
         <h1>
           <strong>Why are we so nostalgic for the 1990s?</strong>
         </h1>
@@ -105,6 +109,9 @@ export const Blog = () => {
         </p>
 
         <p className="specialist">Senior Marketing Specialist</p>
+        <div className="hand">
+          <img src={hand} alt="Hand" />
+        </div>
       </div>
     </>
   );
