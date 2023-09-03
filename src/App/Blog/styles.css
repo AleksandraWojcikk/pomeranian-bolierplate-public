@@ -19,6 +19,30 @@ text-transform: uppercase;
 margin-bottom: 0;
 }
 
+.wrapper1 {
+    display: inline-flex;
+    flex-direction: column;
+    border: 8px;
+    border-radius: 8px;
+    background: #23213D;
+    color: #FFFFFF;
+   padding: 45 61 45 61;
+   align-items: flex-start;
+   gap: 10px;
+   margin-left: 61px;
+   margin-top: 45px;
+   margin-right: 61px;
+   margin-bottom: 45px;
+}
+
+.notificationIcon {
+    width: 35px;
+height: 35px;
+
+
+
+}
+
 .wrapper {
     display: inline-flex;
     flex-direction: column;
@@ -110,4 +134,8 @@ ul {
     align-items: flex-start;
     gap: 29px;
     text-decoration-line: underline;
+}
+
+.blog > .wrapper {
+    background: #23213D;
 }

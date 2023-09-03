@@ -5,8 +5,9 @@ export const Blog = () => {
     <>
       <div className="blog">BLOG</div>
       {/* Pierwszy post */}
-      <div className="wrapper">
+      <div className="wrapper1">
         <div className="date">30-11-2022</div>
+
         <h1>
           <strong>Why are we so nostalgic for the 1990s?</strong>
         </h1>
