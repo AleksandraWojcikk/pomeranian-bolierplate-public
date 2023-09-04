@@ -4,6 +4,9 @@ import './styles/header.css';
 import { Logo } from '../Components/Logo/Logo';
 import { Link } from 'react-router-dom';
 
+import { SettingIcon } from '../Components/Icons/SettingIcon';
+import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
+
 export function AppHeader() {
   return (
     <header>
@@ -11,7 +14,10 @@ export function AppHeader() {
         <Link to="/">
           <Logo />
         </Link>
-        <div className="header-title">Tytuł nagłówka</div>
+      </div>
+      <div className="headerUserMenu">
+        <SettingIcon />
+        <HeaderMenu />
       </div>
     </header>
   );

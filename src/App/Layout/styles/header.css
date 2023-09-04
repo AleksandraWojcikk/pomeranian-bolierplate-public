@@ -18,4 +18,7 @@ header.header-title {
   font-weight: normal;
 }
 
-
+.headerUserMenu {
+  display: flex;
+  align-items: center;
+}
