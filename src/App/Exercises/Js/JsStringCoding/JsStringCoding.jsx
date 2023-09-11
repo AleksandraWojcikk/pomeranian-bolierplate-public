@@ -27,7 +27,7 @@ export const JsStringCoding = () => {
 
   const upperCase = string3.toUpperCase(); // IT'S RAINING OUTSIDE.
 
-  const trimString = templateString.trim(); // siema
+  const trimString = templateString.trim(); // siema; usuwanie spacji
 
   const indexOfString = string2.indexOf('hel'); // 0
 
