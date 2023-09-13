@@ -13,6 +13,7 @@ import { jsStringConversionRouterMetaData } from './JsStringConversion/router-da
 import { jsArrayBasicsRouterMetaData } from './JsArrayBasics/router-data';
 import { jsArrayMethodsExerciseRouterMetaData } from './JsArrayMethodsExercise/router-data';
 import { jsObjectsBasicsRouterMetaData } from './JsObjectsBasics/router-data';
+import { dateAndTimeRouterMetaData } from './DateAndTime/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -28,5 +29,6 @@ export const blockRouterMetaData = [
   jsArrayBasicsRouterMetaData,
   jsArrayMethodsExerciseRouterMetaData,
   jsObjectsBasicsRouterMetaData,
+  dateAndTimeRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
