@@ -145,5 +145,14 @@ export function JsFunctionsBasics() {
   // Dlaczego używamy let i const, a nie var?
   // var nie posiada zasięgu blokowego, co może prowadzić do nieoczekiwanych rezultatów w kodzie. W przypadku let i const, zmienne są widoczne tylko wewnątrz bloku, co poprawia czytelność i bezpieczeństwo kodu.
 
+  //zadanie domowe ciąg Fibonacciego:
+
+  function fibo(n) {
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    return fibo(n - 1) + fibo(n - 2);
+  }
+  console.log('Ciąg Fibonacciego: ', fibo(19));
+
   return <div>JS Function basics</div>;
 }
