@@ -149,3 +149,47 @@ const evenNumbers = numbers.filter(function (number) {
 });
 
 console.log('evenNumbers', evenNumbers); // [ 2, 4, 6, 8, 10 ]
+
+// Zadanie 2: Podwój każdy element tablicy
+// zastosuj map
+
+let tablica = [1, 2, 3, 4, 5];
+let podwojoneElementy = tablica.map(function (element) {
+  return element * 2;
+});
+
+console.log('podwojone Elementy: ', podwojoneElementy);
+
+// Zadanie 3: Znajdź najdłuższy wyraz
+// zastosuj reduce (w reduce stwórz if'a na sprawdzenie czy obecny wyraz jest "dłuższy"  od porównywanego)
+
+function znajdzNajdluzszyWyraz(tekst) {
+  // Podzielenie tekstu na wyrazy, zakładając, że są one oddzielone spacją
+  let wyrazy = tekst.split(' ');
+
+  // Wykorzystanie reduce do znalezienia najdłuższego wyrazu
+  let najdluzszyWyraz = wyrazy.reduce(function (najdluzszy, obecnyWyraz) {
+    return obecnyWyraz.length > najdluzszy.length ? obecnyWyraz : najdluzszy;
+  }, '');
+
+  return najdluzszyWyraz;
+}
+
+// Przykład
+let tekst = 'To jest przykład znajdowania najdłuższego wyrazu w tekście';
+let najdluzszy = znajdzNajdluzszyWyraz(tekst);
+console.log('Najdłuższy wyraz: ' + najdluzszy);
+
+// Zadanie 4:  Oblicz sumę liczb parzystych
+// zastosuj reduce
+let liczby = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let sumaParzystych = liczby.reduce(function (suma, obecnaLiczba) {
+  if (obecnaLiczba % 2 === 0) {
+    return suma + obecnaLiczba;
+  } else {
+    return suma;
+  }
+}, 0);
+
+console.log('Suma liczb parzystych: ' + sumaParzystych);
