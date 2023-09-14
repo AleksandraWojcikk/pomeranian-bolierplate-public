@@ -149,3 +149,4 @@ const evenNumbers = numbers.filter(function (number) {
 });
 
 console.log('evenNumbers', evenNumbers); // [ 2, 4, 6, 8, 10 ]
+//pozostałe zadania domowe na branchu: jsfunctionsbasics
