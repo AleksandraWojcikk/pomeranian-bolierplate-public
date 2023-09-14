@@ -154,5 +154,69 @@ export function JsFunctionsBasics() {
   }
   console.log('Ciąg Fibonacciego: ', fibo(19));
 
+  //Napisz funkcje sortImmute, ktora przyjmuje jako parametr tablice cyfr i zwraca ją posortowana
+  //funkcja ma nie zmieniać pierwotnej tablicy
+  const originalArr = [1, 3, 2];
+  //const sortImmune = (arr) => [...arr].sort((a, b) => a - b);
+  const sortImmune = (arr) => arr.slice().sort((a, b) => a - b);
+
+  const sortedArr = sortImmune(originalArr);
+  console.log({
+    originalArr, // [1, 3, 2]
+    sortedArr, // [1, 2, 3]
+  });
+  // stwórz funkcje która zliczy wszystkie wystąpienia pierwotne wywołanej funkcji
+  //   ZliczWystapienia(1)(1,1,2,3,5,7,8,1) -> 3
+  //  ZliczWystapienia('nie liczba')(1,1,2,3,5,7,8,1) -> 'złe wejscie'
+  //  ZliczWystapienia(1)(1,1,2,3, 'cokolwiek', {},[],1) -> 3
+
+  function ZliczWystapienia(target) {
+    if (typeof target !== 'number') {
+      return () => 'złe wejscie';
+    }
+
+    return (...numbers) => {
+      let count = 0;
+      for (const num of numbers) {
+        if (typeof num === 'number' && num === target) {
+          count++;
+        }
+      }
+      return count;
+    };
+  }
+  console.log(
+    'ZliczWystapienia',
+    ZliczWystapienia(1)(1, 1, 2, 3, 5, 7, 8, 1, {}, [], 'test', false)
+  );
+  // stwórz funkcję calculateWithChar, która przyjmuje jako argument jeden operator matematyczne
+  // '+', '-', '*', '/'
+  // funkcja calculateWithChar ma zwracać funkcję, która przyjmuje dwie liczby jako argumenty
+  // calculateWithChar('+')(1,2) -> 3
+  // calculateWithChar('*')(1,2) -> 2
+  // calculateWithChar('/')(1,2) -> 0.5
+  // calculateWithChar('---')(1,2) -> 'zły znak'
+  // calculateWithChar('+')('abc',2) -> 'złe wejscie'
+  function calculateWithChar(operator) {
+    return (num1, num2) => {
+      if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        return 'złe wejscie';
+      }
+      switch (operator) {
+        case '+':
+          return num1 + num2;
+        case '-':
+          return num1 - num2;
+        case '*':
+          return num1 * num2;
+        case '/':
+          return num1 / num2;
+        default:
+          return 'zły znak';
+      }
+    };
+  }
+  console.log('calculateWithChar', calculateWithChar('**')('***', 2));
+
   return <div>JS Function basics</div>;
 }
