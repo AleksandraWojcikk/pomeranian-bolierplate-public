@@ -1,0 +1,20 @@
+.blue-button {
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--secondary-secondary, #23213D);
+}
+.red-button {
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #FE3756;
+}

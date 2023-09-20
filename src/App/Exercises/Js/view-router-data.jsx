@@ -16,6 +16,7 @@ import { jsObjectsBasicsRouterMetaData } from './JsObjectsBasics/router-data';
 import { dateAndTimeRouterMetaData } from './DateAndTime/router-data';
 import { setTimeOutRouterMetaData } from './SetTimeOut/router-data';
 import { animationsJSRouterMetaData } from './AnimationsJS/router-data';
+import { hitTheMoleGameRouterMetaData } from './HitTheMoleGame/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -34,5 +35,6 @@ export const blockRouterMetaData = [
   dateAndTimeRouterMetaData,
   setTimeOutRouterMetaData,
   animationsJSRouterMetaData,
+  hitTheMoleGameRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
