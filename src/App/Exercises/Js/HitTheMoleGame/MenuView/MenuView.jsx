@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 
-export const MenuView = () => {
+export const MenuView = ({ clickStartButton, setClickStartButton }) => {
   const [timeButton, setTimeButton] = useState(null);
   const [moleButton, setMoleButton] = useState(null);
 
@@ -16,6 +16,10 @@ export const MenuView = () => {
     console.log(event.target.id);
     setMoleButton(event.target.id);
   };
+
+  function handleStartClick() {
+    setClickStartButton(!clickStartButton);
+  }
 
   return (
     <div>
@@ -78,7 +82,7 @@ export const MenuView = () => {
         <div className="moles">
           <h4>PRZYCISKI STERUJĄCE</h4>
           <div className="button-container">
-            <button>START</button>
+            <button onClick={handleStartClick}>START</button>
           </div>
         </div>
       </div>

@@ -1,0 +1,79 @@
+.box-timer {
+    display: flex;
+    flex-direction: column; 
+    font-family: Poppins;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timerButtons {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    gap: 24px;
+    width: 400px;
+    
+}
+
+.stopButton {
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #FE3756;
+}
+
+.nibyButton {
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    color: black;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #EBEBEB;
+}
+
+.nibyText {
+text-align: center;
+margin: 0;
+line-height: 30px;
+}
+
+.rectangles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kwadracik {
+    width: 102px;
+height: 102px;
+border-radius: 8px;
+background-color: #EBEBEB;
+margin: 5px;
+display: flex;
+justify-content: center;
+}
+
+.kwadracik img {
+    align-self: center;
+width: 91.43px;
+height: 63.24px;
+top: 19.72px;
+left: 117.61px;
+}
+
+.green-button {
+    background-color: green;
+}
+.red-empty-button {
+    background-color: red;
+}
+
