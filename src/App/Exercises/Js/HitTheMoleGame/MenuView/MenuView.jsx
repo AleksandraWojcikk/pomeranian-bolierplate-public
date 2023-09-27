@@ -3,13 +3,18 @@ import React from 'react';
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 
-export const MenuView = ({ clickStartButton, setClickStartButton }) => {
+export const MenuView = ({
+  clickStartButton,
+  setClickStartButton,
+  setHowManyMinutes,
+}) => {
   const [timeButton, setTimeButton] = useState(null);
   const [moleButton, setMoleButton] = useState(null);
 
-  const changeColor = (event) => {
+  const changeColor = (event, value) => {
     console.log(event.target.id);
     setTimeButton(event.target.id);
+    setHowManyMinutes(value);
   };
 
   const handleMoleClick = (event) => {
@@ -35,21 +40,21 @@ export const MenuView = ({ clickStartButton, setClickStartButton }) => {
           <div className="button-container">
             <Button
               id={1}
-              changeColor={changeColor}
+              changeColor={(event) => changeColor(event, 60)}
               timeButton={timeButton}
               label={'1 minuta'}
             />
 
             <Button
               id={2}
-              changeColor={changeColor}
+              changeColor={(event) => changeColor(event, 120)}
               timeButton={timeButton}
               label={'2 minuty'}
             />
 
             <Button
               id={3}
-              changeColor={changeColor}
+              changeColor={(event) => changeColor(event, 180)}
               timeButton={timeButton}
               label={'3 minuty'}
             />

@@ -1,6 +1,12 @@
 import './Button.css';
 
-export const Button = ({ id, changeColor, timeButton, label }) => {
+export const Button = ({
+  id,
+  changeColor,
+  timeButton,
+
+  label,
+}) => {
   console.log(timeButton == id ? 'red-button' : 'blue-button');
 
   return (

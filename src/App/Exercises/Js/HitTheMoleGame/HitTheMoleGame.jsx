@@ -6,14 +6,20 @@ import { useState } from 'react';
 
 export function HitTheMoleGame() {
   const [clickStartButton, setClickStartButton] = useState(false);
-  // wstawic conditional rendering ktory robilam wczesniej . {clickStartButton && i co displayed}
+  const [howManyMinutes, setHowManyMinutes] = useState(null);
+
   return (
     <>
-      <MenuView
-        clickStartButton={clickStartButton}
-        setClickStartButton={setClickStartButton}
-      />
-      {clickStartButton && <GameView />}
+      {!clickStartButton && (
+        <MenuView
+          clickStartButton={clickStartButton}
+          setClickStartButton={setClickStartButton}
+          // howManyMinutes={howManyMinutes}
+          setHowManyMinutes={setHowManyMinutes}
+        />
+      )}
+
+      {clickStartButton && <GameView howManyMinutes={howManyMinutes} />}
     </>
   );
 }
