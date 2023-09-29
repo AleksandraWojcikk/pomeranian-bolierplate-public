@@ -1,4 +1,4 @@
-export const OopEncapsulation = () => {
+export const OopComposition = () => {
   class Computer {
     #faveWord = 'I compute!';
 

@@ -1,44 +1,41 @@
 export const OopInheritance = () => {
-  class Animal {
-    type;
-    pawsCount;
-    eyesColor;
-
-    speak(voice) {
-      return voice;
+  class Person {
+    introduce() {
+      console.log('I am a Person');
     }
   }
 
-  class Cat extends Animal {
-    hasThreeEyelids = true;
-    canMeow = true;
-
-    constructor(pawsCount, eyesColor) {
-      super();
-      this.type = 'Cat';
-      this.pawsCount = pawsCount;
-      this.eyesColor = eyesColor;
+  class Builder extends Person {
+    introduce() {
+      super.introduce();
+      console.log('I am also a Builder');
     }
   }
 
-  class Dog extends Animal {
-    canBark = true;
-
-    constructor(pawsCount, eyesColor) {
-      super();
-      this.type = 'Dog';
-      this.pawsCount = pawsCount;
-      this.eyesColor = eyesColor;
+  class Doctor extends Person {
+    introduce() {
+      super.introduce();
+      console.log('I am also a Doctor');
     }
   }
 
-  const dog = new Dog(4, 'brown');
+  class Pediatrician extends Doctor {
+    introduce() {
+      console.log("I'm a Pediatrician");
+    }
+  }
 
-  const cat = new Cat(3, 'green');
+  const person = new Person();
+  person.introduce();
 
-  console.log(dog.speak('hau hau'));
+  const builder = new Builder();
+  builder.introduce();
 
-  console.log(cat.speak('miau miau'));
+  const doctor = new Doctor();
+  doctor.introduce();
+
+  const pediatrician = new Pediatrician();
+  pediatrician.introduce();
 
   return <>dziedziczenie</>;
 };
