@@ -10,6 +10,7 @@ export const TryCatchAndFinally = () => {
       throw new Error('Niestety nie działa');
     }
   }
+
   useEffect(() => {
     try {
       dumb();
