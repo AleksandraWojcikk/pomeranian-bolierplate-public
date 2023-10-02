@@ -39,3 +39,10 @@ export const OopInheritance = () => {
 
   return <>dziedziczenie</>;
 };
+
+// stwórz klasę Person posiadającą metodę, która wyświetli nam komunikat
+// introduce() => "I am a Person"
+// następnie stwórz dwie podklasy Builder i Doctor, dziedziczące metodę i wyświetlające odpowiednio komunikat
+// introduce() => "I am a Person", "I am also a Doctor"
+// introduce() => "I am a Person", "I am also a Builder"
+// następnie stwórz podklasę Doctor: Pediatrician - metoda ma wyświetlić jedynie : introduce() => "I'm a Pediatrician"
