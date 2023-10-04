@@ -1,27 +1,31 @@
+import { useEffect, useState } from 'react';
+
 export const PromisesExercises = () => {
+  const [myResult, setMyResult] = useState(null);
+
   const myPromise = () =>
     new Promise((resolve, reject) => {
       setTimeout(() => {
         const randomNumber = Math.round(Math.random());
         if (randomNumber) {
-          resolve('Sekces');
+          resolve('Sukces');
         } else {
           reject('Porazka');
         }
       }, 2000);
     });
+  useEffect(() => {
+    myPromise()
+      .then((value) => {
+        setMyResult(value);
+      })
+      .catch((err) => {
+        setMyResult(err);
+      })
+      .finally(() => {
+        console.log('koniec');
+      });
+  }, []);
 
-  myPromise()
-    .then((value) => {
-      console.log(value);
-      return value;
-    })
-    .catch((err) => {
-      console.log(err);
-    })
-    .finally(() => {
-      console.log('koniec');
-    });
-
-  return <div>zmien mnie</div>;
+  return <div>Rezultat: {myResult}</div>;
 };
