@@ -88,7 +88,7 @@ export const PromiseMethodsExercise = () => {
 
   return (
     <>
-      <div>Hello Promise Methods</div>
+      <div>These are the Promise Methods:</div>
       <button onClick={firstFunction}>First function</button>
       <button onClick={secondFunction}>Second function</button>
       <button onClick={thirdFunction}>Third function</button>

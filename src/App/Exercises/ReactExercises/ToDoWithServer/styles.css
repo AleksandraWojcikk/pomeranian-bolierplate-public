@@ -1,0 +1,207 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.titleOfThePage {
+    color: var(--text-text-primary, #222);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* header/H5 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; /* 168.75% */
+}
+
+.smallAddButton {
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 25.893px;
+font-style: normal;
+font-weight: 500;
+line-height: 16.054px; /* 62% */
+
+display: flex;
+width: 30px;
+height: 30px;
+padding: 10.357px 18.643px;
+justify-content: center;
+align-items: center;
+gap: 8.286px;
+flex-shrink: 0;
+margin-top: 20px;
+
+border-radius: 4.143px;
+border: 0.518px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+}
+
+
+
+.allList {
+    display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+
+border-radius: 10px;
+background: #FFF;
+
+}
+
+.block {
+    display: flex;
+width: 629px;
+padding: 18px 24px;
+align-items: flex-start;
+gap: 8px;
+border-radius: 8px;
+border-left: 5px solid var(--gray-300, #C8CBD1);
+background: var(--background-bg-primary, #FFF);
+box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+
+flex-direction: column;
+
+}
+.blockSelected {
+    display: flex;
+width: 629px;
+padding: 18px 24px;
+align-items: flex-start;
+gap: 8px;
+border-radius: 8px;
+border-left: 5px solid var(--gray-700, #6B7280);
+background: var(--gray-300, #C8CBD1);
+box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+flex-direction: column;
+}
+
+
+.blockTitle {
+    flex: 1 0 0;
+    color: var(--secondary-secondary, #23213D);
+
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; 
+}
+
+.nameAndDate {
+
+color: var(--gray-700, #6B7280);
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+margin: 0;
+line-height: 5px;
+}
+
+.description {
+    width: 437px;
+flex-shrink: 0;
+
+color: var(--gray-700, #6B7280);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+margin:0;
+line-height: 20px;
+
+}
+
+.selectedDate {
+    color: var(--gray-700, #6B7280);
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+margin: 0;
+line-height: 5px;
+
+}
+
+.checkIconAndDate{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 7px;
+
+
+
+}
+
+.checkIcon {
+    width: 43.127px;
+height: 30px;
+gap: 7px;
+
+
+}
+
+.oneLineWithIcon{
+    display: flex;
+    justify-content: space-between;
+   width: 580px; 
+   
+
+}
+
+.icons {
+    display: flex;
+align-items: center;
+gap: 11px;
+width: 10px;
+height: 25px;
+}
+
+.checkGrey {
+    width: 30.852px;
+height: 24.527px;
+}
+
+.trashGrey {
+    width: 26px;
+height: 26px;
+}
+
+.pencil {
+    width: 20.661px;
+height: 21.441px;
+}
+
+.oneLineWithTitle {
+    display: flex;
+    width: 500px;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.addButton {
+    display: flex;
+width: 163px;
+gap: 16px;
+flex-shrink: 0;
+
+
+height: 56px;
+padding: 20px 36px;
+justify-content: center;
+align-items: center;
+
+border-radius: 8px;
+border: 1px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+
+}
