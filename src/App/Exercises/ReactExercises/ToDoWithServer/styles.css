@@ -205,3 +205,127 @@ border: 1px solid var(--primary-primary, #FE3756);
 background: var(--primary-primary, #FE3756);
 
 }
+
+
+
+
+.errorMessage {
+    color: var(--colors-actions-danger, #E12B1B);
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px;
+/* text-align:center; */
+
+  }
+
+  /* od Roksany */
+  .todo-small-window {
+    display: flex;
+    /* width: 488px; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+.reminder-input {
+    display: flex;
+height: 48px;
+padding: 13px 16px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 5px;
+border: 1px solid var(--grey-300, #C8CBD1);
+background: #FFF;
+}
+
+
+.buttonsAtTheBottom {
+    /* display: flex;
+    justify-content: flex-end;
+    width: 500px;
+    gap: 30px; */
+/* align-items: flex-start; */
+    display: flex;
+
+gap: 29px;
+justify-content: right;
+margin-top: 30px;
+}
+
+.backButton{
+    display: flex;
+width: 163px;
+gap: 16px;
+flex-shrink: 0;
+
+height: 56px;
+padding: 20px 36px;
+justify-content: center;
+align-items: center;
+
+border-radius: 8px;
+border: 1px solid var(--secondary-secondary, #23213D);
+background: var(--secondary-secondary, #23213D);}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loader */
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: red;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  
+  

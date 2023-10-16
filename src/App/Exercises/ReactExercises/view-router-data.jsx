@@ -7,6 +7,8 @@ import { useEffectsRouterMetaData } from './UseEffects/router-data';
 import { toDoWithServerRouterMetaData } from './ToDoWithServer/router-data';
 import { brawoScreenRouterMetaData } from './ToDoWithServer/BrawoScreen/router-dataBrawoScreen';
 import { sorryScreenRouterMetaData } from './ToDoWithServer/SorryScreen/router-dataSorryScreen';
+import { createNewToDoRouterMetaData } from './ToDoWithServer/CreateNewToDo/router-dataCreateNewToDo';
+import { editToDoRouterMetaData } from './ToDoWithServer/EditToDoList/router-dataEditToDoList';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -16,5 +18,7 @@ export const blockRouterMetaData = [
   toDoWithServerRouterMetaData,
   brawoScreenRouterMetaData,
   sorryScreenRouterMetaData,
+  createNewToDoRouterMetaData,
+  editToDoRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
