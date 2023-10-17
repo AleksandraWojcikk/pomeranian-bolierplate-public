@@ -10,6 +10,7 @@ import { sorryScreenRouterMetaData } from './ToDoWithServer/SorryScreen/router-d
 import { createNewToDoRouterMetaData } from './ToDoWithServer/CreateNewToDo/router-dataCreateNewToDo';
 import { editToDoRouterMetaData } from './ToDoWithServer/EditToDoList/router-dataEditToDoList';
 import { reactUseRefMetaData } from './ReactUseRef/router-data';
+import { reactUseRefExerciseMetaData } from './ReactUseRefExercise/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -22,5 +23,6 @@ export const blockRouterMetaData = [
   createNewToDoRouterMetaData,
   editToDoRouterMetaData,
   reactUseRefMetaData,
+  reactUseRefExerciseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
