@@ -11,6 +11,8 @@ import { createNewToDoRouterMetaData } from './ToDoWithServer/CreateNewToDo/rout
 import { editToDoRouterMetaData } from './ToDoWithServer/EditToDoList/router-dataEditToDoList';
 import { reactUseRefMetaData } from './ReactUseRef/router-data';
 import { reactUseRefExerciseMetaData } from './ReactUseRefExercise/router-data';
+import { formsMetaData } from './Forms/router-data';
+import { basicFormMetaData } from './BasicForm/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -24,5 +26,7 @@ export const blockRouterMetaData = [
   editToDoRouterMetaData,
   reactUseRefMetaData,
   reactUseRefExerciseMetaData,
+  formsMetaData,
+  basicFormMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
