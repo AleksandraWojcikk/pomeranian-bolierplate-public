@@ -13,6 +13,7 @@ import { reactUseRefMetaData } from './ReactUseRef/router-data';
 import { reactUseRefExerciseMetaData } from './ReactUseRefExercise/router-data';
 import { formsMetaData } from './Forms/router-data';
 import { basicFormMetaData } from './BasicForm/router-data';
+import { fireBaseLoginRouterMetaData } from '../FirebaseLogin/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -28,5 +29,6 @@ export const blockRouterMetaData = [
   reactUseRefExerciseMetaData,
   formsMetaData,
   basicFormMetaData,
+  fireBaseLoginRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
